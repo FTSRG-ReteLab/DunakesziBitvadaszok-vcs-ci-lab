@@ -63,6 +63,18 @@ public class TrainSystemTest {
 		controller.followSpeed();
 		Assert.assertEquals(0, controller.getReferenceSpeed());
 	}
+	
+	@Test
+	public void test4() {
+		user.overrideJoystickPosition(5);
+		
+		controller.followSpeed();
+		Assert.assertEquals(1, controller.getTableSize());
+		//System.out.println(controller.getTableSize());
+		controller.followSpeed();
+		Assert.assertEquals(2, controller.getTableSize());
+		//System.out.println(controller.getTableSize());
+	}
 
 	
 }

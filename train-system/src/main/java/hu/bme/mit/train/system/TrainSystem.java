@@ -12,7 +12,7 @@ public class TrainSystem {
 	private TrainController controller = new TrainControllerImpl();
 	private TrainSensor sensor = new TrainSensorImpl(controller);
 	private TrainUser user = new TrainUserImpl(controller);
-
+	
 	public TrainController getController() {
 		return controller;
 	}
@@ -25,4 +25,5 @@ public class TrainSystem {
 		return user;
 	}
 
+	
 }

@@ -1,7 +1,10 @@
 subprojects {
-  apply plugin: 'java'
-
+  apply plugin: 'java'	
+	
   repositories {
     jcenter()
   }
+  
+  sourceCompatibility = '1.8'
+  targetCompatibility = '1.8'
 }
