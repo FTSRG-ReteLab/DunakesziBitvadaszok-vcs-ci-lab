@@ -1,6 +1,4 @@
 language: java
-
-jdk:
-  - oraclejdk8
-  
-apply plugin: "java"
+install: true
+script:
+  - grandle build
